@@ -11,7 +11,7 @@ Features:
 Installation
 ============
 
-- Install and enable like any other Plone addon
+- Install and enable like any other Plone addon (not in pypi yet, copy to src - sorry)
 - Make sure the viewlet is in correct position (use @@manage-viewlets)
 - Develop CSS for the list. You can use the portal-globalnav probably as a starting point
  
