@@ -1,7 +1,7 @@
 Introduction
 ============
 
-This product implements a viewlet that will add a second level navigation to site. It is meant to be used below the viewlet plone.global_sections, which lists main sections. The product is not meant for implementing dropdown menus, but only the second level that reacts to navigation. Similar menu concept is used by ie. SAP/R3, and the idea is that showing a context sensible part in the menus helps user with navigation.
+This product implements a viewlet that will add a second level navigation to site. It is meant to be used below the viewlet plone.global_sections, which lists main sections. The product is not meant for implementing dropdown menus, but only the second level that reacts to navigation. Similar menu concept is used by ie. SAP/R3, and the idea is that showing a context sensitive part in the menus helps user with navigation.
 
 Features:
 
