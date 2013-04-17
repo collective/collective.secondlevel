@@ -15,7 +15,7 @@ Screenshot with very simple css:
 Installation
 ============
 
-- Install to Plone (download to src, add zcml, eggs, and development stanzas to buildout.cfg)
+- Install to Plone 
 - Make sure the viewlet is in correct position (use @@manage-viewlets). It should be unless you have already customized viewlets.
 - Develop CSS for the list. You can use the portal-globalnav as reference.
  
