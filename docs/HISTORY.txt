@@ -5,3 +5,9 @@ Changelog
 -------------------
 
 - Initial release
+
+1.01 (18.3.2013)
+-------------------
+
+- Minor bugfixes (mostly logging, catching some corner cases)
+
