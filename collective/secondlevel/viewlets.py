@@ -33,7 +33,6 @@ class SecondLevelMenu(grok.Viewlet):
     first,second = self.getElements(chain)
     if first:
       children = first.getChildNodes()
-      print (len(children))
       for x in children:
         # The description may be one line or more
         desc = x.description
