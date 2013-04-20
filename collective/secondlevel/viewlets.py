@@ -14,7 +14,7 @@ class SecondLevelMenu(grok.Viewlet):
 
   def update(self):
     """ Set up variable containing the second level navigation menu """
-    self.ulclass = self.context.aq_inner.id
+    self.ulclass = ''
     self.list = self.buildMenu(self.context)
 
   @memoize
@@ -33,6 +33,7 @@ class SecondLevelMenu(grok.Viewlet):
     chain = self.getAcquisitionChain(context)
     first,second = self.getElements(chain)
     if first:
+      self.ulclass = first.id # Update now when we have the information available
       children = first.getChildNodes()
       for x in children:
         # The description may be one line or more
