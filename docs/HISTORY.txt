@@ -11,3 +11,8 @@ Changelog
 
 - Minor bugfixes (mostly logging, catching some corner cases)
 
+1.02 (20.3.2013)
+-------------------
+
+- Fixed AttributeError exception when handling multiline descriptions
+
