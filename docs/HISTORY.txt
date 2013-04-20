@@ -16,3 +16,8 @@ Changelog
 
 - Fixed AttributeError exception when handling multiline descriptions
 
+1.03 (20.3.2013)
+-------------------
+
+- Added id attributes to li tags for easier themeing
+

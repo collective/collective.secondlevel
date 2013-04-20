@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.02'
+version = '1.03'
 
 setup(name='collective.secondlevel',
       version=version,

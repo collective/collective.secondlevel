@@ -43,7 +43,7 @@ class SecondLevelMenu(grok.Viewlet):
         if x == second:
           cssclass = 'selected'
         # Add the content to list
-        list += '<li class="'+cssclass+'"><a href="'+x.absolute_url_path()+'"'
+        list += '<li id="secondlevel-'+x.id+'" class="'+cssclass+'"><a href="'+x.absolute_url_path()+'"'
         if len(str(desc))>0:
           list += ' title="'+desc+'"'
         list += '>'+x.title+'</a></li>'
