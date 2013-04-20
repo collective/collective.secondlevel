@@ -37,7 +37,7 @@ class SecondLevelMenu(grok.Viewlet):
         # The description may be one line or more
         desc = x.description
         if len(desc.splitlines())>0:
-          desc = x.splitlines[0]
+          desc = desc.splitlines()[0]
         # Plain if not in path
         cssclass = 'plain' 
         if x == second:
