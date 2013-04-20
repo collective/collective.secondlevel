@@ -21,3 +21,9 @@ Changelog
 
 - Added id attributes to li tags for easier themeing
 
+1.04 (20.3.2013)
+-------------------
+
+- Added the id of first level as the class attribute of the ul tag
+
+
