@@ -1,2 +1,2 @@
-<ul tal:attributes="id viewlet/__name__" tal:condition="viewlet/available" tal:content="structure viewlet/getMenu">
+<ul tal:attributes="id viewlet/__name__; class viewlet/ulclass" tal:condition="viewlet/available" tal:content="structure viewlet/getMenu">
 </ul>
