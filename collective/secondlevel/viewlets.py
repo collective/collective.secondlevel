@@ -36,19 +36,20 @@ class SecondLevelMenu(grok.Viewlet):
       self.ulclass = first.id # Update now when we have the information available
       children = first.getChildNodes()
       for x in children:
-        # The description may be one line or more
-        desc = x.description
-        if len(desc.splitlines())>0:
-          desc = desc.splitlines()[0]
-        # Plain if not in path
-        cssclass = 'plain' 
-        if x == second:
-          cssclass = 'selected'
-        # Add the content to list
-        list += '<li id="secondlevel-'+x.id+'" class="'+cssclass+'"><a href="'+x.absolute_url_path()+'"'
-        if len(str(desc))>0:
-          list += ' title="'+desc+'"'
-        list += '>'+x.title+'</a></li>'
+        if not x.getExcludeFromNav(): # Do not process anything that was excluded from navigation
+          # The description may be one line or more
+          desc = x.description
+          if len(desc.splitlines())>0:
+            desc = desc.splitlines()[0]
+          # Plain if not in path
+          cssclass = 'plain' 
+          if x == second:
+            cssclass = 'selected'
+          # Add the content to list
+          list += '<li id="secondlevel-'+x.id+'" class="'+cssclass+'"><a href="'+x.absolute_url_path()+'"'
+          if len(str(desc))>0:
+            list += ' title="'+desc+'"'
+          list += '>'+x.title+'</a></li>'
     return list
 
   def getMenu(self):

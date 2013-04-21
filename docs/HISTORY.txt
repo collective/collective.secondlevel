@@ -26,4 +26,8 @@ Changelog
 
 - Added the id of first level as the class attribute of the ul tag
 
+1.05 (21.3.2013)
+-------------------
+
+- Exclude from navigation is now honored
 

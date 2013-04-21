@@ -7,6 +7,7 @@ Features:
 
 - When the main section changes the second level reflects the children of that section
 - The content item on selected path will have css class to signify that it is selected
+- Exclude from navigation is honored
 
 Screenshot with very simple css:
 
